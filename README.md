@@ -3,6 +3,10 @@ Food App
 
 This project is a simple food ordering app built with React, Redux for state management, Tailwind CSS for styling, and an animation library for spinners. The app also includes basic component routing and is ready for deployment.
 
+
+Original Link -- https://food-fiesta-alpha.vercel.app/
+
+
 Table of Contents
 Features
 Technologies Used
