@@ -6,7 +6,7 @@ import toast from 'react-hot-toast'
 import axios from 'axios'
 
 const Login = () => {
-    const foodBg = '../../public/burger-pizza-fast-food-design-isolated-vector-14340074-removebg-preview.png'
+    const foodBg = '../../public/burger-pizza-fast-food-design-isolated-vector-14340074-removebg-preview.webp'
 
     const [email, setemail] = useState('')
     const [password, setPassword] = useState('')
