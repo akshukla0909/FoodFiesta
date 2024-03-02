@@ -16,7 +16,7 @@ function Success() {
   }, []);
 
   const clearCart = async()=>{
-        const res = axios.get('http://localhost:3000/clear-cart')
+        const res = axios.get('https://food-fiesta-server.onrender.com/clear-cart')
         const data = res.data
         console.log(data);
   }

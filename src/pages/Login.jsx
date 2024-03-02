@@ -6,7 +6,7 @@ import toast from 'react-hot-toast'
 import axios from 'axios'
 
 const Login = () => {
-    const foodBg = '../../public/burger-pizza-fast-food-design-isolated-vector-14340074-removebg-preview.webp'
+    const foodBg = '/public/06img.webp'
 
     const [email, setemail] = useState('')
     const [password, setPassword] = useState('')
@@ -18,7 +18,7 @@ const Login = () => {
           e.preventDefault()
           
       try {
-        const res = await axios.post('http://localhost:3000/login', {email,password})
+        const res = await axios.post('https://food-fiesta-server.onrender.com/login', {email,password})
           const data = await res.data
          
         if(res.status === 200){

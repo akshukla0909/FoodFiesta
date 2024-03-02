@@ -13,7 +13,7 @@ function FoodCart({id,name,price, rating, img,desc, handleToast}) {
      const user = useSelector((state)=> state.auth.user)
 
      const addToCart = async ({id,name, img, price, rating, quantity})=>{
-         const res = await axios.post(`http://localhost:3000/add-to-cart/${user._id}`, {
+         const res = await axios.post(`https://food-fiesta-server.onrender.com/add-to-cart/${user._id}`, {
           id, image : img, name, price, rating, quantity 
          })
 

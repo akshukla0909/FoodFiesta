@@ -7,7 +7,7 @@ const NavList = ({toggleNav, setToggleNav, auth}) => {
  
     const navigate = useNavigate()
     const handleLogOut = async ()=>{
-        const res = await axios.get('http://localhost:3000/logout')
+        const res = await axios.get('https://food-fiesta-server.onrender.com/logout')
         const data = res.data
         console.log(data);
         toast.success("logout success")

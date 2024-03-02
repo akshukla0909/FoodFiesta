@@ -13,7 +13,7 @@ const ResetPassword = () => {
       e.preventDefault()
 
       try {
-         const res = await axios.put('http://localhost:3000/reset-password', {email})
+         const res = await axios.put('https://food-fiesta-server.onrender.com/reset-password', {email})
          const data = await res.data;
          if(data.success){
             toast.success(data.success);

@@ -7,7 +7,8 @@ const SignUp = () => {
 
     const navigate = useNavigate()
 
-    const foodBg = '/burger-pizza-fast-food-design-isolated-vector-14340074-removebg-preview.png'
+    const foodBg = '/public/06img.webp'
+
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -17,7 +18,7 @@ const SignUp = () => {
          e.preventDefault()
 
         try {
-          const res = await axios.post('http://localhost:3000/signup', {name, email,password})
+          const res = await axios.post('https://food-fiesta-server.onrender.com/signup', {name, email,password})
           const data = await res.data
           console.log(data);
           if(res.status === 201){

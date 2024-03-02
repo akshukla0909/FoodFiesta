@@ -16,7 +16,7 @@ function ItemCard({id,name,quantity,price,image, _id}) {
 
   const removeFromCart = async (id) => {
     const res = await axios.delete(
-      `http://localhost:3000/remove-from-cart/${id}`
+      `https://food-fiesta-server.onrender.com/remove-from-cart/${id}`
     );
     const data = await res.data;
     toast.success(data.message);
@@ -26,7 +26,7 @@ function ItemCard({id,name,quantity,price,image, _id}) {
   const incrementQuantity = async (id) => {
     console.log(id);
     const res = await axios.put(
-      `http://localhost:3000/increment-quantity/${id}`
+      `https://food-fiesta-server.onrender.com/increment-quantity/${id}`
     );
     const data = await res.data;
     getCart(user).then((data) => dispatch(setCart(data.cartItems)));
@@ -35,7 +35,7 @@ function ItemCard({id,name,quantity,price,image, _id}) {
   const decrementQuantity = async (id) => {
     console.log(id);
     const res = await axios.put(
-      `http://localhost:3000/decrement-quantity/${id}`
+      `https://food-fiesta-server.onrender.com/decrement-quantity/${id}`
     );
     const data = await res.data;
     toast.success("one item removed")

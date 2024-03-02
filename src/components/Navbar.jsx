@@ -20,7 +20,7 @@ function Navbar() {
 
   const getUser = async ()=>{
       try {
-        const res = await axios.get('http://localhost:3000/get-user', 
+        const res = await axios.get('https://food-fiesta-server.onrender.com/get-user', 
         { withCredentials : true });
  
         const data = res.data

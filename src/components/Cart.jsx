@@ -24,7 +24,7 @@ function Cart() {
  const navigate = useNavigate()
 
  const checkOut = async()=>{
-   const res = await axios.get('http://localhost:3000/checkout')
+   const res = await axios.get('https://food-fiesta-server.onrender.com/checkout')
    console.log(res.data);
    const {url} = res.data
    console.log(url);
