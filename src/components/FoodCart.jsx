@@ -1,12 +1,30 @@
 import React from 'react'
 import { FaStar } from "react-icons/fa";
-import { useDispatch } from 'react-redux';
-import { addToCart, removeFromCart } from '../redux/slices/CartSlices';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart, removeFromCart, setCart } from '../redux/slices/CartSlices';
+import axios from 'axios';
+import toast from 'react-hot-toast';
+import { getCart } from '../../helper';
 
 
 function FoodCart({id,name,price, rating, img,desc, handleToast}) {
   
      const dispatch =  useDispatch()
+     const user = useSelector((state)=> state.auth.user)
+
+     const addToCart = async ({id,name, img, price, rating, quantity})=>{
+         const res = await axios.post(`http://localhost:3000/add-to-cart/${user._id}`, {
+          id, image : img, name, price, rating, quantity 
+         })
+
+         const data = await res.data;
+         toast.success(data.message);
+
+         getCart(user).then(data=> dispatch(setCart(data.cartItems)))
+
+
+     }
+
   return (
     <div className='font-bold w-[270px] p-6 bg-white flex flex-col rounded-lg gap-3'>
         <img 
@@ -28,8 +46,11 @@ function FoodCart({id,name,price, rating, img,desc, handleToast}) {
             </span>
             <button 
             onClick={()=>{
-              dispatch(addToCart({id, name, price, img, rating ,qty : 1 }))
-              handleToast(name);
+               !user ? toast.error("please login first") :  addToCart({
+                id, name, price, img, rating ,quantity : 1 
+               })
+              // dispatch(addToCart({id, name, price, img, rating ,qty : 1 }))
+              // handleToast(name);
             }} 
              className='p-1 px-2 text-sm font-medium text-white bg-green-500 hover:bg-green-600 rounded-lg'>Add to cart</button>
         </div>

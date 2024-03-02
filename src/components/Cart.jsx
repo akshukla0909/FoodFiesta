@@ -4,6 +4,8 @@ import ItemCard from './ItemCard';
 import { useSelector } from 'react-redux';
 import { FaShoppingCart } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+axios.defaults.withCredentials = true;
 
 
 function Cart() {
@@ -12,14 +14,22 @@ function Cart() {
 
  const cartItems =  useSelector((state)=> state.cart.cart)
  const totalQty = cartItems.reduce((totalQty, item)=>{
-     return totalQty + item.qty
+     return totalQty + item.quantity
  }, 0)
 
  const totalPrice = cartItems.reduce((total, item)=>{
-         return total + item.qty * item.price
+         return total + item.quantity * item.price
  },0) 
 
  const navigate = useNavigate()
+
+ const checkOut = async()=>{
+   const res = await axios.get('http://localhost:3000/checkout')
+   console.log(res.data);
+   const {url} = res.data
+   console.log(url);
+   window.location.href = url
+ }
 
   return (
     <>
@@ -33,10 +43,9 @@ function Cart() {
 
         { cartItems.length > 0 ?
           cartItems.map((food)=>{
-          return  <ItemCard key={food.id} id={food.id} name={food.name}
-          price={food.price}
-          img={food.img}
-          qty = {food.qty}
+          return  <ItemCard 
+          key={food.id} 
+          {...food}
           />
         }) : 
           <h2 className='text-center text-lg font-bold text-red-600'>Your cart is empty.</h2>
@@ -48,7 +57,7 @@ function Cart() {
         <h3>Total amount : {totalPrice}</h3>
         <hr className='w-[90vw] lg:w-[20vw] my-2' />
         <button 
-         onClick={()=> navigate("/success") }
+         onClick={checkOut}
         className='border bg-green-500 py-1 px-3 font-medium rounded-lg lg:w-[20vw] w-[100vw] text-white mb-5'>Checkout</button>
       </div>
       </div>

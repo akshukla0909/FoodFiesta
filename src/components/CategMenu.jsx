@@ -36,7 +36,7 @@ function CategMenu() {
                 return ( 
                    <button
                   onClick={()=> dispatch(setCateg(category))}
-                   key={index} className={`px-3 py-[4px] bg-gray-200 rounded-lg font-medium hover:bg-green-500 hover:text-white ${selectedCategory === category &&  "bg-green-500 text-white"}`}>
+                   key={index} className={`px-3 py-[4px] bg-gray-200 rounded-lg font-medium ${selectedCategory === category &&  "bg-green-500 text-white"}`}>
                   { category }
                    </button>
                 )
