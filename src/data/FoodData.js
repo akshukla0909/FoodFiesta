@@ -1,7 +1,7 @@
 const FoodData = [
     {
       id: 1,
-      img: "https://img.freepik.com/free-photo/seafood-pizza_74190-5944.jpg?w=996&t=st=1693062328~exp=1693062928~hmac=53fd9ad496580db41c6ca8066510cd89c6b0a0389de8bb6b875a78a1eda09cb5",
+      img: "https://b.zmtcdn.com/data/dish_photos/7a4/055cdb2bb95ee764184b99c42f9c97a4.jpg?output-format=webp",
       name: "Onion Pizza",
       price: 150,
       desc: "A delicious pizza topped with fresh onions for a delightful flavor combination. This pizza is perfect for onion lovers and offers a unique twist on the classic pizza experience. Enjoy the perfect blend of cheesy goodness and the sharp taste of onions in every bite. Whether you're sharing with friends or enjoying it all to yourself, this Onion Pizza is sure to satisfy your pizza cravings.",
@@ -10,7 +10,7 @@ const FoodData = [
     },
     {
       id: 2,
-      img: "https://w7.pngwing.com/pngs/339/55/png-transparent-pizza-margherita-italian-cuisine-hot-dog-pizza-cheese-pizza-thumbnail.png",
+      img: "https://b.zmtcdn.com/data/dish_photos/9fb/1ef15ef2f99961f31bab2d35b08f09fb.png?output-format=webp",
       name: "Margherita Pizza",
       price: 130,
       desc: "A classic Italian pizza topped with fresh tomatoes, mozzarella cheese, basil leaves, and a drizzle of olive oil. Simple yet bursting with flavors, this Margherita Pizza is a timeless favorite that captures the essence of Italian cuisine.",
@@ -19,7 +19,7 @@ const FoodData = [
     },
     {
       id: 3,
-      img: "https://w7.pngwing.com/pngs/21/55/png-transparent-pepperoni-pizza-margarita-pizza-margherita-italian-cuisine-tomato-pizza-food-cheese-recipe-thumbnail.png",
+      img: "https://b.zmtcdn.com/data/dish_photos/f0e/542031b63c27b281d3afe9eb1cffef0e.png",
       name: "Pepperoni Pizza",
       price: 160,
       desc: "Indulge in the savory delight of this Pepperoni Pizza, loaded with slices of spicy pepperoni, melted cheese, and a tangy tomato sauce. A popular choice that's perfect for satisfying your pizza cravings.",
@@ -28,7 +28,7 @@ const FoodData = [
     },
     {
       id: 4,
-      img: "https://w7.pngwing.com/pngs/569/109/png-transparent-pizza-with-vegetables-and-mushroom-toppings-sicilian-pizza-california-style-pizza-pizza-margherita-vegetarian-cuisine-pizza-food-recipe-gourmet-thumbnail.png",
+      img: "https://b.zmtcdn.com/data/dish_photos/f2f/cf56544928841cff662de501bf4e8f2f.jpg",
       name: "Mushroom and Spinach Pizza",
       price: 140,
       desc: "Experience the earthy flavors of mushrooms combined with the freshness of spinach on this delightful pizza. Topped with a blend of cheeses, this Mushroom and Spinach Pizza offers a balanced and satisfying taste.",
@@ -37,7 +37,7 @@ const FoodData = [
     },
     {
       id: 5,
-      img: "https://w7.pngwing.com/pngs/843/171/png-transparent-pizza-73-restaurant-catupiry-chicken-as-food-pizza-baked-goods-food-recipe-thumbnail.png",
+      img: "https://b.zmtcdn.com/data/dish_photos/86d/e7db858e8976788997ed591bce1d786d.jpg",
       name: "BBQ Chicken Pizza",
       price: 170,
       desc: "Savor the smoky goodness of this BBQ Chicken Pizza, featuring tender pieces of chicken marinated in barbecue sauce, red onions, and a medley of cheeses. A fusion of flavors that's sure to delight your taste buds.",
@@ -46,7 +46,7 @@ const FoodData = [
     },
     {
       id: 6,
-      img: "https://w7.pngwing.com/pngs/133/54/png-transparent-pancakes-served-on-plate-banana-pancakes-scrambled-eggs-breakfast-ihop-pancake-food-recipe-eating-thumbnail.png",
+      img: "https://b.zmtcdn.com/data/dish_photos/ef8/40b8fcac98a49b101557d39f62af2ef8.jpg",
       name: "Classic Pancakes",
       price: 80,
       desc: "Start your day with a stack of fluffy pancakes served with maple syrup and a dollop of butter. A timeless breakfast favorite that's sure to satisfy your morning cravings.",
@@ -55,7 +55,7 @@ const FoodData = [
     },
     {
       id: 7,
-      img: "https://w7.pngwing.com/pngs/645/475/png-transparent-croissant-bread-croissant-muffin-brunch-bacon-egg-and-cheese-sandwich-bread-croissants-baked-goods-food-baking-thumbnail.png",
+      img: "https://b.zmtcdn.com/data/dish_photos/95b/125ee9c9f14de18382af8be6d130595b.jpg",
       name: "Egg and Bacon Croissant",
       price: 110,
       desc: "Indulge in a buttery croissant filled with scrambled eggs, crispy bacon, and melted cheese. A savory and satisfying breakfast option that's perfect for on-the-go mornings.",
@@ -64,7 +64,7 @@ const FoodData = [
     },
     {
       id: 8,
-      img: "https://w7.pngwing.com/pngs/683/103/png-transparent-frozen-yogurt-parfait-breakfast-yoghurt-fruit-salad-yogurt-frutti-di-bosco-food-breakfast-thumbnail.png",
+      img: "https://b.zmtcdn.com/data/pictures/chains/2/3400282/e34e7dbefa2f5c757602cefbf3a20dd7_o2_featured_v2.jpg",
       name: "Greek Yogurt Parfait",
       price: 95,
       desc: "Enjoy a healthy and refreshing breakfast with layers of creamy Greek yogurt, fresh berries, honey, and granola. A balanced option that provides a burst of flavors and energy.",
@@ -73,7 +73,7 @@ const FoodData = [
     },
     {
       id: 9,
-      img: "https://w7.pngwing.com/pngs/400/603/png-transparent-toast-tostytosty-la-tosteria-menu-food-dish-avocado-toast-food-toast-avocado-toast-thumbnail.png",
+      img: "https://b.zmtcdn.com/data/dish_photos/384/0bce1b86452f8ae3981ce49496913384.jpg",
       name: "Avocado Toast",
       price: 120,
       desc: "Savor the creaminess of mashed avocado on toasted whole grain bread, topped with a sprinkle of sea salt and red pepper flakes. A trendy and nutritious breakfast choice.",
@@ -82,7 +82,7 @@ const FoodData = [
     },
     {
       id: 10,
-      img: "https://w7.pngwing.com/pngs/20/725/png-transparent-grain-bowl-breakfast-cereal-muesli-corn-flakes-bowl-granola-food-breakfast-recipe-thumbnail.png",
+      img: "https://b.zmtcdn.com/data/pictures/3/20834833/a75c4ab2d6a01e0e1dab3205e5c4b2d8_o2_featured_v2.jpg",
       name: "Fruit and Nut Oatmeal",
       price: 85,
       desc: "Warm up with a bowl of hearty oatmeal packed with mixed fruits, nuts, and a drizzle of honey. A wholesome breakfast that provides a satisfying start to your day.",
