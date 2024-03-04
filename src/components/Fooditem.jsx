@@ -12,7 +12,7 @@ const Fooditem = () => {
   return (
     <>
     <Toaster position="top-center" reverseOrder={false} />
-    <div className='grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-0 gap-y-6 lg:justify-start my-10'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 justify-items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-0 gap-y-6 lg:justify-start my-10'>
        
        {
         FoodData.filter((food)=>{
