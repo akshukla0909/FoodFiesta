@@ -41,7 +41,7 @@ const Login = () => {
     <>
 <div className="bg-gray-100 flex justify-center items-center h-screen overflow-hidden">
 <div className="w-1/2 h-screen hidden lg:block mt-10 scale-[.9]">
-  <img src={foodBg} alt="Placeholder Image" className="object-cover object-center w-[100%] h-[90%]" />
+  <img src="https://raw.githubusercontent.com/akshukla0909/FoodFiesta/Main/src/assets/06img.webp" alt="Placeholder Image" className="object-cover object-center w-[100%] h-[90%]" />
 </div>
 <div className="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
 <Link to="/" className="text-green-500 hover:underline cursor-pointer absolute right-6 top-2">Skip login</Link>
