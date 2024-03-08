@@ -7,7 +7,7 @@ const SignUp = () => {
 
     const navigate = useNavigate()
 
-    const foodBg = '/src/assets/06img.webp'
+    const foodBg = 'https://raw.githubusercontent.com/akshukla0909/FoodFiesta/Main/src/assets/06img.webp'
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
